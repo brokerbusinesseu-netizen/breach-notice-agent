@@ -1,0 +1,15 @@
+{
+  "incident_id": "INC-2026-101",
+  "title": "Customer export in a publicly readable storage bucket",
+  "description": "A CSV export with customer records was stored in a storage bucket that was publicly readable for about 9 days. Access logs show downloads from unknown IP addresses.",
+  "organisation": "Przykladowa Sp. z o.o. (SYNTHETIC)",
+  "dpo_email": "success@simulator.amazonses.com",
+  "breach_type": "confidentiality",
+  "discovered_at": "2026-10-28T08:00:00+01:00",
+  "data_categories": ["basic_identity", "contact", "credentials"],
+  "subjects_count": 1800,
+  "exposure": "public",
+  "malicious": false,
+  "measures_taken": "The bucket was made private, the file removed, all affected passwords were reset and access logs were preserved.",
+  "recipients": ["success@simulator.amazonses.com", "bounce@simulator.amazonses.com", "complaint@simulator.amazonses.com"]
+}

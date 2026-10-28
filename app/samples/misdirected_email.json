@@ -1,0 +1,15 @@
+{
+  "incident_id": "INC-2026-102",
+  "title": "Invoice sent to a wrong external recipient",
+  "description": "An invoice with a customer name and address was e-mailed to a wrong external address. The recipient confirmed in writing that the message was deleted.",
+  "organisation": "Przykladowa Sp. z o.o. (SYNTHETIC)",
+  "dpo_email": "success@simulator.amazonses.com",
+  "breach_type": "confidentiality",
+  "discovered_at": "2026-10-28T09:30:00+01:00",
+  "data_categories": ["basic_identity", "contact"],
+  "subjects_count": 1,
+  "exposure": "misdirected_external",
+  "recipients_confirmed_deleted": true,
+  "measures_taken": "Recipient confirmed deletion; staff reminded about address checks.",
+  "recipients": []
+}

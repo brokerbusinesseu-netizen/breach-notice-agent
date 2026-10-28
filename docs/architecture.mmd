@@ -1,0 +1,16 @@
+flowchart LR
+    A[Incident intake<br/>JSON or form] -->|starts 72 h clock| B[Risk assessment<br/>deterministic rules<br/>EDPB 9/2022]
+    B -->|no risk| R[Register only<br/>Art. 33 5]
+    B -->|risk or high risk| C[Draft notices<br/>authority Art. 33 3<br/>individuals Art. 34 2<br/>PL and EN]
+    C --> D{{DPO review<br/>edit and Approve}}
+    D -->|approved, content hash stored| E[Send via<br/>Amazon SES v2<br/>SendEmail]
+    E --> F[(Append-only ledger<br/>SHA-256 hash chain)]
+    A --> F
+    B --> F
+    C --> F
+    D --> F
+    E -->|MessageId or error| F
+    F --> G[Verify chain<br/>UI and API]
+    subgraph AWS CDS
+      E
+    end

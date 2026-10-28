@@ -1,0 +1,17 @@
+{
+  "incident_id": "INC-2026-103",
+  "title": "Ransomware on a clinic patient records server",
+  "description": "Ransomware encrypted the patient records server. The most recent backup is 6 days old, and the attacker claims to have copied the data.",
+  "organisation": "Przykladowa Przychodnia (SYNTHETIC)",
+  "dpo_email": "success@simulator.amazonses.com",
+  "breach_type": "availability",
+  "discovered_at": "2026-10-27T22:15:00+01:00",
+  "data_categories": ["basic_identity", "contact", "health", "national_id"],
+  "subjects_count": 4200,
+  "exposure": "third_party",
+  "malicious": true,
+  "data_restored": false,
+  "vulnerable_subjects": false,
+  "measures_taken": "Server isolated, incident response engaged, restore from backup in progress, law enforcement informed.",
+  "recipients": ["success@simulator.amazonses.com"]
+}
